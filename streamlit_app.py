@@ -18,7 +18,7 @@ def load_models():
         return None, None, None
 
 def main():
-    st.title("🔮 Customer Churn Prediction Dashboard")
+    st.title("Customer Churn Prediction Dashboard")
     st.markdown("---")
     
     model, scaler, label_encoders = load_models()
@@ -106,11 +106,11 @@ def main():
         
         # Risk assessment
         if probability > 0.7:
-            st.error(f"🚨 HIGH RISK: This customer has a high probability of churning ({probability:.1%})")
+            st.error(f" HIGH RISK: This customer has a high probability of churning ({probability:.1%})")
         elif probability > 0.3:
-            st.warning(f"⚠️ MEDIUM RISK: This customer has a moderate probability of churning ({probability:.1%})")
+            st.warning(f" MEDIUM RISK: This customer has a moderate probability of churning ({probability:.1%})")
         else:
-            st.success(f"✅ LOW RISK: This customer has a low probability of churning ({probability:.1%})")
+            st.success(f" LOW RISK: This customer has a low probability of churning ({probability:.1%})")
 
 if __name__ == "__main__":
     main()
