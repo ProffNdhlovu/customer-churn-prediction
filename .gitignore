@@ -1,0 +1,22 @@
+churn_env/
+
+# Virtual environments
+churn_env/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Models (optional - depends if you want to share trained models)
+models/*.pkl
+
+# Data files
+*.csv
+*.xlsx
+
+# OS files
+.DS_Store
+.vscode/
